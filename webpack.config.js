@@ -1,5 +1,9 @@
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var config = {
+const port = process.env.PORT || 3000;
+
+module.exports = {
 
     entry: './main.js',
 
@@ -8,6 +12,8 @@ var config = {
         filename : 'index.js'
     },
 
+    devtool: "inline-source-map",
+
     devServer:{
         inline:true,
         historyApiFallback: true,
@@ -15,17 +21,14 @@ var config = {
     },
 
     module:{
-        loaders : [
+        rules : [
             {
                 test: /\.jsx?$/,
                 exclude:/node_modules/,
-                loader:'babel-loader',
-                query : {
-                    presets: ['es2015','react']
-                }
+                use:[{
+                    loader: 'babel-loader',
+                }]
             }
         ]
     }
 };
-
-module.exports = config;
