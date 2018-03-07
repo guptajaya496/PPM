@@ -35,6 +35,7 @@ import PPMSurgicals from "./components/ppmsurgicals.jsx";
 import ProductsCatalogue from "./components/productscatalogue.jsx";
 import ServicesProfile from "./components/services-profile.jsx";
 import Register from "./containers/register.jsx";
+import Sidebar from "./components/sidebar.jsx";
 
 const history = createBrowserHistory();
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
@@ -49,37 +50,41 @@ class App extends Component{
                     <div>
                         <Header/>
 
-                        <Router history={history}>
-                            <Switch>
-                                <Route exact path='/' component={Home} />
-                                <Route  path='/about-organization' component={AboutOrganization} />
-                                <Route  path='/association-scope-portfolio' component={AssociationScopePortfolio} />
-                                <Route  path='/contactus' component={ContactUs} />
-                                <Route  path='/login' component={Login} />
-                                <Route  path='/register' component={Register} />
-                                <Route  path='/user' component={User} />
-                                <Route  path='/achievementsgallery' component={AchievementGallery} />
-                                <Route  path='/architectural-structural' component={ArchitecturalStructural} />
-                                <Route  path='/call-form' component={CallFrom} />
-                                <Route  path='/civil-construction' component={CivilConstruction} />
-                                <Route  path='/consultancy-portfolio' component={ConsultancyPortfolio} />
-                                <Route  path='/designs' component={Designs} />
-                                <Route  path='/enquiry-form' component={EnquiryForm} />
-                                <Route  path='/general-rules-regulations' component={GeneralRulesRegulations} />
-                                <Route  path='/get-in-touch-form' component={GetinTouch} />
-                                <Route  path='/interior-design' component={InteriorDesigns} />
-                                <Route  path='/managing-directors-message' component={ManagingDirectorsMessage} />
-                                <Route  path='/mission-vision' component={MissionVision} />
-                                <Route  path='/ppm-event-management' component={PPMEventManagement} />
-                                <Route  path='/ppm-constructions' component={PPMConstructions} />
-                                <Route  path='/ppm-consultancy' component={PPMConsultancy} />
-                                <Route  path='/ppm-surgicals' component={PPMSurgicals} />
-                                <Route  path='/products-catalogue' component={ProductsCatalogue} />
-                                <Route  path='/services-profile' component={ServicesProfile} />
-                                <Route  path='/associate-form' component={AssociateForm} />
-                                <Route  path='/logout' component={Logout} />
-                            </Switch>
-                        </Router>
+                        <div>
+                            <div className="col-sm-2"><Sidebar/></div>
+                            <div className="col-sm-10"><Router history={history}>
+                                <Switch>
+                                    <Route exact path='/' component={Home} />
+                                    <Route  path='/about-organization' component={AboutOrganization} />
+                                    <Route  path='/association-scope-portfolio' component={AssociationScopePortfolio} />
+                                    <Route  path='/contactus' component={ContactUs} />
+                                    <Route  path='/login' component={Login} />
+                                    <Route  path='/register' component={Register} />
+                                    <Route  path='/user' component={User} />
+                                    <Route  path='/achievementsgallery' component={AchievementGallery} />
+                                    <Route  path='/architectural-structural' component={ArchitecturalStructural} />
+                                    <Route  path='/call-form' component={CallFrom} />
+                                    <Route  path='/civil-construction' component={CivilConstruction} />
+                                    <Route  path='/consultancy-portfolio' component={ConsultancyPortfolio} />
+                                    <Route  path='/designs' component={Designs} />
+                                    <Route  path='/enquiry-form' component={EnquiryForm} />
+                                    <Route  path='/general-rules-regulations' component={GeneralRulesRegulations} />
+                                    <Route  path='/get-in-touch-form' component={GetinTouch} />
+                                    <Route  path='/interior-design' component={InteriorDesigns} />
+                                    <Route  path='/managing-directors-message' component={ManagingDirectorsMessage} />
+                                    <Route  path='/mission-vision' component={MissionVision} />
+                                    <Route  path='/ppm-event-management' component={PPMEventManagement} />
+                                    <Route  path='/ppm-constructions' component={PPMConstructions} />
+                                    <Route  path='/ppm-consultancy' component={PPMConsultancy} />
+                                    <Route  path='/ppm-surgicals' component={PPMSurgicals} />
+                                    <Route  path='/products-catalogue' component={ProductsCatalogue} />
+                                    <Route  path='/services-profile' component={ServicesProfile} />
+                                    <Route  path='/associate-form' component={AssociateForm} />
+                                    <Route  path='/logout' component={Logout} />
+                                </Switch>
+                            </Router></div>
+                        </div>
+
                         <Footer/>
                     </div>
                 </Provider>
