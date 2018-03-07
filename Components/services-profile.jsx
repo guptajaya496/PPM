@@ -14,3 +14,5 @@ class ServicesProfile extends Component{
         );
     }
 }
+
+export default ServicesProfile;
