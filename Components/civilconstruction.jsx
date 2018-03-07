@@ -14,3 +14,5 @@ class CivilConstruction extends Component{
         );
     }
 }
+
+export default CivilConstruction;

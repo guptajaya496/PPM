@@ -14,3 +14,5 @@ class ArchitecturalStructural extends Component{
         );
     }
 }
+
+export default ArchitecturalStructural;

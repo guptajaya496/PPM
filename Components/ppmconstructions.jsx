@@ -14,3 +14,5 @@ class PPMConstructions extends Component{
         );
     }
 }
+
+export default PPMConstructions;

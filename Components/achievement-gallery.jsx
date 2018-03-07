@@ -14,3 +14,5 @@ class AchievemntGallery extends Component{
         );
     }
 }
+
+export default AchievemntGallery;

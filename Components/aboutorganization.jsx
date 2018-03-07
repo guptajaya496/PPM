@@ -14,3 +14,5 @@ class AboutOrganization extends Component{
         );
     }
 }
+
+export default AboutOrganization;

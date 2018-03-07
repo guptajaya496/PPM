@@ -14,3 +14,5 @@ class PPMSurgicals extends Component{
         );
     }
 }
+
+export default PPMSurgicals;

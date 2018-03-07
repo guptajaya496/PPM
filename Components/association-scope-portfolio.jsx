@@ -14,3 +14,5 @@ class AssociationScopePortfolio extends Component{
         );
     }
 }
+
+export default AssociationScopePortfolio;

@@ -14,3 +14,5 @@ class ConsultancyPortfolio extends Component{
         );
     }
 }
+
+export default ConsultancyPortfolio;

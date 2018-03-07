@@ -14,3 +14,5 @@ class Designs extends Component{
         );
     }
 }
+
+export default Designs;

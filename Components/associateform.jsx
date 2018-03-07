@@ -14,3 +14,5 @@ class AssociateForm extends Component{
         );
     }
 }
+
+export default AssociateForm;

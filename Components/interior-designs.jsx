@@ -14,3 +14,5 @@ class InteriorDesigns extends Component{
         );
     }
 }
+
+export default InteriorDesigns;

@@ -14,3 +14,5 @@ class PPMConsultancy extends Component{
         );
     }
 }
+
+export default PPMConsultancy;

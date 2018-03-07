@@ -14,3 +14,5 @@ class PPMEventManagement extends Component{
         );
     }
 }
+
+export default PPMEventManagement;

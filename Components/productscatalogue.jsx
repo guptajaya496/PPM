@@ -14,3 +14,5 @@ class ProductsCatalogue extends Component{
         );
     }
 }
+
+export default ProductsCatalogue;

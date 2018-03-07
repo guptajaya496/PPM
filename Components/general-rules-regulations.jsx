@@ -14,3 +14,5 @@ class GeneralRulesRegulations extends Component{
         );
     }
 }
+
+export default GeneralRulesRegulations;

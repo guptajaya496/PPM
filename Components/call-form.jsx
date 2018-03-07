@@ -14,3 +14,5 @@ class CallForm extends Component{
         );
     }
 }
+
+export default CallFrom;

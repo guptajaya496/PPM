@@ -14,3 +14,5 @@ class ManagingDirectorsMessage extends Component{
         );
     }
 }
+
+export default ManagingDirectorsMessage;

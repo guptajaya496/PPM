@@ -14,3 +14,5 @@ class GetinTouch extends Component{
         );
     }
 }
+
+export default GetinTouch;

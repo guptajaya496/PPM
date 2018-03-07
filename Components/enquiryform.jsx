@@ -14,3 +14,5 @@ class EnquiryForm extends Component{
         );
     }
 }
+
+export default EnquiryForm;
