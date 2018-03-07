@@ -1,31 +1,49 @@
 import React, {Component} from 'react';
-import {Carousel} from 'react-responsive-carousel';
 
 class HomeCarousel extends Component{
     render(){
         return(
-            <Carousel showArrows={true}>
-                <div>
-                    <img src="../images/ppmimg1.jpeg"></img>
-                    <p className="legend">legend 1</p>
-                </div>
+            <div  id="mainCarousel" className="carousel carousel-slide" data-ride="carousel">
+                <ol className="carousel-indicators">
+                    <li data-target="#mainCarousel" data-slide-to="0" className="active"></li>
+                    <li data-target="#mainCarousel" data-slide-to="1"></li>
+                    <li data-target="#mainCarousel" data-slide-to="2"></li>
+                    <li data-target="#mainCarousel" data-slide-to="3"></li>
+                </ol>
 
                 <div>
-                    <img src="../images/ppmimg2.jpeg"></img>
-                    <p className="legend">legend 2</p>
+                    <div className="item active carousel-image">
+                        <img src="../images/ppmimg1.jpeg"></img>
+                    </div>
+
+                    <div className="item carousel-image">
+                        <img src="../images/ppmimg2.jpeg"></img>
+                    </div>
+
+                    <div className="item carousel-image">
+                        <img src="../images/ppmimg3.jpeg"></img>
+                    </div>
+
+                    <div className="item carousel-image">
+                        <img src="../images/ppmimg4.jpeg"></img>
+                    </div>
+
+
                 </div>
 
-                <div>
-                    <img src="../images/ppmimg3.jpeg"></img>
-                    <p className="legend">legend 3</p>
-                </div>
+                <a className="left carousel-control" href="#mainCarousel" data-slide="prev">
+                    <span className="glyphicon glyphicon-chevron-left"></span>
+                    <span className="sr-only">Previous</span>
+                </a>
 
-                <div>
-                    <img src="../images/ppmimg4.jpeg"></img>
-                    <p className="legend">legend 4</p>
-                </div>
+                <a className="right carousel-control" href="#mainCarousel" data-slide="next">
+                    <span className="glyphicon glyphicon-chevron-right"></span>
+                    <span className="sr-only">Next</span>
+                </a>
 
-            </Carousel>
+
+            </div>
+
 
         );
     }

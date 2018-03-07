@@ -309,6 +309,16 @@ body {
     border-color: #ffffff;
 }
 
+.carousel-style{
+    height: content-box;
+    width: 100%;
+}
+
+.carousel-image{
+    height: fit-content;
+    width: fit-content;
+}
+
 .nav-side-menu {
     overflow: auto;
     font-family: verdana;
@@ -317,7 +327,7 @@ body {
     background-color: #2e6da4;
     position: fixed;
     top: 0px;
-    width: 200px;
+    width: 220px;
     height: 80%;
     color: #e1ffff;
 }
