@@ -4,9 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "postinstall": "webpack -p",
-    "start" : "node server.js"
+    "start" : "webpack-dev-server --hot"
   },
   "engines": {
     "node":"v8.9.4",
