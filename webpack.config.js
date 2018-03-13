@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const port = process.env.PORT || 3000;
+=======
+>>>>>>> 3cac065e8070c171dfa5b536f0b524256b3fbb60
 
 module.exports = {
 

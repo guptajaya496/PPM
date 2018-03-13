@@ -6,14 +6,25 @@ import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import combinedReducers from './reducers/index';
+<<<<<<< HEAD
+import Home from './components/home.jsx';
+import AboutOrganization from './components/aboutorganization.jsx';
+import Login from './containers/login.jsx';
+=======
 
 //Components
 import Home from './components/home.jsx';
 import AboutOrganization from './components/aboutorganization.jsx';
+>>>>>>> 3cac065e8070c171dfa5b536f0b524256b3fbb60
 import AchievementGallery from './components/achievement-gallery.jsx';
 import ArchitecturalStructural from './components/architectural-structural.jsx';
 import ContactUs from './components/contactus.jsx';
 import User from './components/user.jsx';
+<<<<<<< HEAD
+import Logout from './containers/logout.jsx';
+import Header from './containers/header.jsx';
+=======
+>>>>>>> 3cac065e8070c171dfa5b536f0b524256b3fbb60
 import Footer from './components/footer.jsx';
 import AssociateForm from './components/associateform.jsx';
 import AssociationScopePortfolio from './components/association-scope-portfolio.jsx';
@@ -33,6 +44,11 @@ import PPMConsultancy from './components/ppmconsultancy.jsx';
 import PPMSurgicals from './components/ppmsurgicals.jsx';
 import ProductsCatalogue from './components/productscatalogue.jsx';
 import ServicesProfile from './components/services-profile.jsx';
+<<<<<<< HEAD
+import Register from './containers/register.jsx';
+import Sidebar from './components/sidebar.jsx';
+
+=======
 import Sidebar from './components/sidebar.jsx';
 
 
@@ -42,6 +58,7 @@ import Logout from './containers/logout.jsx';
 import Header from './containers/header.jsx';
 import Register from './containers/register.jsx';
 
+>>>>>>> 3cac065e8070c171dfa5b536f0b524256b3fbb60
 const history = createBrowserHistory();
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 const  store=createStoreWithMiddleware(combinedReducers);
