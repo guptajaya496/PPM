@@ -54,14 +54,12 @@ class App extends Component{
                 <Provider store={store}>
                     <div>
                         <Header/>
+                    </div>
+                    <div>
+                        <div className="col-sm-2"><Sidebar/></div>
 
-                        <div>
-                            <div className="col-sm-2"><Sidebar/></div>
-
-                            <div className="col-sm-10">
-                                <div className="row-header"></div>
-                                <div>
-                                    <Router history={history}>
+                        <div className="col-sm-10">
+                            <Router history={history}>
                                         <Switch>
                                             <Route exact path='/' component={Home} />
                                             <Route  path='/about-organization' component={AboutOrganization} />
@@ -92,10 +90,10 @@ class App extends Component{
                                             <Route  path='/logout' component={Logout} />
                                         </Switch>
                                     </Router>
-                                </div>
-                            </div>
                         </div>
+                    </div>
 
+                    <div>
                         <Footer/>
                     </div>
                 </Provider>

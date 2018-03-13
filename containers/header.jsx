@@ -30,37 +30,37 @@ class Header extends Component{
         return(
             <div>
                 <nav className=" navbar-expand-lg bg-color navbar-fixed-top nav " role="navigation">
-                    <a className="navbar-brand" href='/'>
+                    <a className="navbar-brand col-sm-4" href='/'>
                         <img src="../images/PPM.jpg" alt="logo" className="logo"></img>
                     </a>
-                    <div id="navbar" className="navbar navbar-collapse collapse">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
+                    <div id="navbar" className="navbar navbar-collapse collapse col-sm-push-3">
+                        <ul className="navbar-nav list-unstyled">
+                            <li className="nav-item col-sm-1">
                                 <a className="nav-link" href='/'>
-                                    {/*<span className="glyphicon glyphicon-home" aria-hidden="true"></span> */}
+                                    <span className="glyphicon glyphicon-home" aria-hidden="true"></span>
                                     Home
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item col-sm-1">
                                 <a className="nav-link" href='/managing-directors-message'>
                                     {/*<span className="glyphicon glyphicon-home" aria-hidden="true"></span>*/}
                                     Managing Directors's Message
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item col-sm-1">
                                 <a className="nav-link" href='/mission-vision'>
                                     {/*<span className="glyphicon glyphicon-home" aria-hidden="true"></span>*/}
                                     Mission & Vision
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item col-sm-1">
                                 <a className="nav-link" href='/about-organization'>
                                     {/*<span className="glyphicon glyphicon-home" aria-hidden="true"></span>*/}
                                     About Organization
                                 </a>
 
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item col-sm-1">
                                 <a className="nav-link" href='/association-scope-portfolio'>
                                     {/*<span className="glyphicon glyphicon-home" aria-hidden="true"></span>*/}
                                     Association & Scope & Portfolio
@@ -138,19 +138,19 @@ class Header extends Component{
                                     {/*</li>*/}
                                 {/*</ul>*/}
                             {/*</li>*/}
-                            <li className="nav-item ">
+                            <li className="nav-item col-sm-1">
                                 <a className="nav-link" href='/general-rules-regulations'>
                                     {/*<span className="glyphicon glyphicon-info-sign" aria-hidden="true"></span> */}
                                     General Rules & Regulations
                                 </a>
                             </li>
-                            <li className="nav-item ">
+                            <li className="nav-item col-sm-1">
                                 <a className="nav-link" href='/achievementsgallery'>
                                     {/*<span className="glyphicon glyphicon-info-sign" aria-hidden="true"></span> */}
                                     Achievement's Gallery
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item col-sm-1">
                                 <a className="nav-link" href='/contactus'>
                                     {/*<i className="glyphicon glyphicon-envelope white"></i> */}
                                     Contact Us
