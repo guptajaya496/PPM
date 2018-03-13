@@ -4,11 +4,21 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+<<<<<<< HEAD
     "start" : "webpack-dev-server --hot"
   },
   "engines": {
     "node":"v8.9.4",
     "npm":"5.6.0"
+=======
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "v8.9.4",
+    "npm": "5.6.0"
+>>>>>>> 3cac065e8070c171dfa5b536f0b524256b3fbb60
   },
   "author": "",
   "license": "ISC",
@@ -30,8 +40,12 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
+<<<<<<< HEAD
     "webpack": "^4.0.1",
     "webpack-dev-server": "^3.1.0"
+=======
+    "webpack": "^4.1.1"
+>>>>>>> 3cac065e8070c171dfa5b536f0b524256b3fbb60
   },
   "devDependencies": {
     "webpack-cli": "^2.0.10"
